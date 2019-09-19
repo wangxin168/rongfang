@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+		<script src="js/jquery-3.2.1.js"></script>
+		<script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="css/index.css">
+		<title></title>
+	</head>
+	<body>
+		<div class="back">
+			<!-- A -->
+			<div class="bott bott_A fir_libao" style="display: none;">
+				<img src="img/biao.png" alt="" class="tiaoti">
+				<p class="diji">您是第<span class="mingci"></span>位抢购用户</p>
+				<p class="gongxi">恭喜您获得<span class="jiazhi"></span></p>
+				<p class="gift"></p>
+				<img src="img/xian.jpg" alt="" class="xian">
+				<p class="tishi">为了您能及时收取礼包</p>
+				<p class="tishi pc_tishi" style="margin-top: 0.05rem;">请正确填写您的寄送地址</p>
+				<div class="shengshi" style="margin-top: -0.4rem;">
+					<p class="erdiansan xiala_box">
+						<img src="img/xiala.png" alt="" class="xiala">
+						<select class="sheng" name="sheng">
+							<option>省（市）</option>
+						</select>
+					</p>
+					<p class="erdianleft xiala_box">
+						<img src="img/xiala.png" alt="" class="xiala">
+						<select class="city" name="city">
+							<option value="">市</option>
+						</select>
+					</p>
+				</div>
+				<div class="shengshi pc_shengshi" style="margin-top: 0.2rem;">
+					<input type="text" placeholder="详细地址" class="adress">
+				</div>
+				<p class="beizhu">备注：本次礼包寄送地址不包含港、澳、台等地区</p>
+				<p class="beizhu pc_beizhu" style="margin-top: 0.2rem;">
+					<img src="img/weixuan.png" alt="" class="xuanze weixuan">
+					<img src="img/xuanzhong.png" alt="" class="xuanze yiyuan" style="display: none;">
+					我已阅读并同意<span class="zhengce">《隐私政策》</span>
+				</p>
+				<img src="img/tijiao.png" class="tijiao">
+			</div>
+			<!-- B -->
+			<div class="bott bott_B sec_libao" style="display: none;">
+				<img src="img/biao.png" alt="" class="tiaoti">
+				<p class="diji">您是第<span class="mingci"></span>位抢购用户</p>
+				<p class="gongxi">恭喜您获得<span class="jiazhi"></span></p>
+				<p class="gift"></p>
+				<p class="tishi">为了您能及时收取礼包,请正确填写您的寄送地址</p>
+				<div class="shengshi" style="margin-top: -0.5rem;">
+					<p class="erdiansan xiala_box">
+						<img src="img/xiala.png" alt="" class="xiala">
+						<select class="sheng" name="sheng">
+							<option>省（市）</option>
+						</select>
+					</p>
+					<p class="erdianleft xiala_box">
+						<img src="img/xiala.png" alt="" class="xiala">
+						<select class="city" name="city">
+							<option value="">市</option>
+						</select>
+					</p>
+				</div>
+				<div class="shengshi pc_shengshi_B" style="margin-top: 0rem;">
+					<input type="text" placeholder="详细地址" class="adress">
+				</div>
+				<p class="beizhu">备注：本次礼包寄送地址不包含港、澳、台等地区</p>
+				<p class="beizhu" style="margin-top: 0.2rem;">
+					<img src="img/weixuan.png" alt="" class="xuanze weixuan">
+					<img src="img/xuanzhong.png" alt="" class="xuanze yiyuan" style="display: none;">
+					我已阅读并同意<span class="zhengce">《隐私政策》</span>
+				</p>
+				<img src="img/tijiao.png" class="tijiao">
+				<img src="img/xian.jpg" alt="" class="xian">
+				<p class="dianji">点击“升级礼包”即有机会获得更多惊喜</p>
+				<div class="dibu">
+					<img src="img/shengji.png" class="shengji">
+				</div>
+			</div>
+			<!-- 成功 -->
+			<div class="bott bott_A succ" style="display: none;">
+				<img src="img/biao.png" alt="" class="tiaoti">
+				<p class="gongxi">恭喜您<span>礼包价值升级为1800元</span></p>
+				<p class="gift">（防水脚垫+后备箱垫+座椅靠垫）</p>
+				<img src="img/xian.jpg" alt="" class="xian">
+				<p class="tishi">为了您能及时收取礼包</p>
+				<p class="tishi pc_tishi" style="margin-top: 0.05rem;">请正确填写您的寄送地址</p>
+				<div class="shengshi" style="margin-top: -0.4rem;">
+					<p class="erdiansan xiala_box">
+						<img src="img/xiala.png" alt="" class="xiala">
+						<select class="sheng" name="sheng"></select>
+					</p>
+					<p class="erdianleft xiala_box">
+						<img src="img/xiala.png" alt="" class="xiala">
+						<select class="city" name="city">
+							<option value="">市</option>
+						</select>
+					</p>
+				</div>
+				<div class="shengshi pc_shengshi" style="margin-top: 0.2rem;">
+					<input type="text" placeholder="详细地址" class="adress">
+				</div>
+				<p class="beizhu">备注：本次礼包寄送地址不包含港、澳、台等地区</p>
+				<p class="beizhu pc_beizhu" style="margin-top: 0.2rem;">
+					<img src="img/weixuan.png" alt="" class="xuanze weixuan">
+					<img src="img/xuanzhong.png" alt="" class="xuanze yiyuan" style="display: none;">
+					我已阅读并同意<span class="zhengce">《隐私政策》</span>
+				</p>
+				<img src="img/tijiao.png" class="tijiao">
+			</div>
+			<!-- 失败 -->
+			<div class="bott bott_A lose" style="display: none;">
+				<img src="img/biao.png" alt="" class="tiaoti">
+				<p class="gongxi" style="margin-top: 0.2rem;">很遗憾</p>
+				<p class="gongxi" style="margin-top: 0.2rem;">您的礼包没能获得升级</p>
+				<p class="yuexiang">您的越享礼包为</p>
+				<p class="gift" style="margin-top: 0.2rem;">（后备箱垫+座椅靠垫）</p>
+				<img src="img/xian.jpg" alt="" class="xian">
+				<p class="tishi">为了您能及时收取礼包</p>
+				<p class="tishi pc_tishi" style="margin-top: 0.05rem;">请正确填写您的寄送地址</p>
+				<div class="shengshi" style="margin-top: -0.4rem;">
+					<p class="erdiansan xiala_box">
+						<img src="img/xiala.png" alt="" class="xiala">
+						<select class="sheng" name="sheng"></select>
+					</p>
+					<p class="erdianleft xiala_box">
+						<img src="img/xiala.png" alt="" class="xiala">
+						<select class="city" name="city">
+							<option value="">市</option>
+						</select>
+					</p>
+				</div>
+				<div class="shengshi pc_shengshi">
+					<input type="text" placeholder="详细地址" class="adress">
+				</div>
+				<p class="beizhu">备注：本次礼包寄送地址不包含港、澳、台等地区</p>
+				<p class="beizhu pc_beizhu" style="margin-top: 0.2rem;">
+					<img src="img/weixuan.png" alt="" class="xuanze weixuan">
+					<img src="img/xuanzhong.png" alt="" class="xuanze yiyuan" style="display: none;">
+					我已阅读并同意<span class="zhengce">《隐私政策》</span>
+				</p>
+				<img src="img/tijiao.png" class="tijiao">
+			</div>
+			<!-- 隐私弹框 -->
+			<div class="yinsi_box">
+				<div class="close_box"><img src="img/cha.png" alt=""></div>
+				<div class="yinsi">
+					<div class="yinsi_white">
+						<div class="yinsi_da">
+							<p class="title_con">隐私政策</p>
+							<img src="img/fenge.png" alt="" class="xian">
+							<div class="yinsi_con">
+								<p class="bols">活动时间 ：</p>
+								<p>2019年8月9日20时-8月31日24时</p>
+								<p class="bols">活动车型 ：</p>
+								<p>全新卡罗拉&全新卡罗拉双擎</p>
+								<p class="bols">活动说明：</p>
+								<p>登录【一汽丰田官方商城】参与活动，选择心目中的全新卡罗拉口碑,支付9.9元参与，即可预订口碑购车礼，活动期间购车便可获得。</p>
+								<p class="bols">参与步骤：</p>
+								<p>1.登录一汽丰田官方商城，进入活动页面，选择心目中的全新卡罗拉口碑，支付9.9元，预订口碑购车礼，于2019年10月31日（含）前购买全新卡罗拉或全新卡罗拉双擎即可兑换</p>
+								<p>2.口碑购车礼可在任意一汽丰田经销商购车后兑换，在2019年10月31日（含）前成功购车，客服人员将于30个工作日内将礼品寄送到您所预留的地址，请务必填写正确的邮寄地址</p>
+								<p class="bols">活动礼品 ：</p>
+								<p>口碑购车礼：价值348元，一汽丰田精品座椅靠枕套装1套</p>
+								<p class="bols">注意事项 ：</p>
+								<p>1.一个手机号针对同一车型仅可预订一份口碑购车礼</p>
+								<p>2.下订后请在15分钟内完成支付，否则交易取消</p>
+								<p>3.1张口碑购车礼仅可限兑换一次，且礼券不可转让</p>
+								<p>4.兑换购车礼时，姓名、手机号必须与实际购车人姓名、手机号保持一致</p>
+								<p>5.此口碑购车礼不与线上其他活动政策同享</p>
+								<p>6.用户于本平台提供的个人信息，仅用于本次活动一汽丰田汽车销售有限公司与用户沟通联络时使用。若留资信息有误，无法取得联系，且在11月30日前无主动反馈，将视为自动放弃购车礼资格</p>
+								<p>7.本活动咨询电话：400-116-3366</p>
+								<p class="bols">退款说明：</p>
+								<p>活动结束后（2019年10月31日），已支付的9.9元订金费用均由系统在30个工作日内按支付顺序原路退还</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		var url = 'https://intf.rfdev.test511.com'
+		if ($(window).width() >= 750) {
+			document.documentElement.style.fontSize = document.documentElement.clientWidth * 100 / 1920 + "px";
+			window.addEventListener("resize", function() {
+				document.documentElement.style.fontSize = document.documentElement.clientWidth * 100 / 1920 + "px"
+			}, false)
+			$('.back').prepend('<img src="img/pc.png" class="beiji">')
+			// $(".beiji").attr("src", "http://intf.phev.test511.com/pc.jpg");
+
+
+		} else if ($(window).width() < 750) {
+			document.documentElement.style.fontSize = document.documentElement.clientWidth * 100 / 750 + "px";
+			window.addEventListener("resize", function() {
+				document.documentElement.style.fontSize = document.documentElement.clientWidth * 100 / 750 + "px"
+			}, false)
+			$('.back').prepend('<img src="img/wap.png" class="beiji">')
+			// $(".beiji").attr("src", "http://intf.phev.test511.com/wap.jpg");
+
+		}
+		$("input").blur(function() {
+			// window.parent.postMessage(3, '*');
+			document.body.scrollTop = document.body.scrollTop
+		});
+		$('select').blur(function() {
+			// window.parent.postMessage(3, '*');
+			document.body.scrollTop = document.body.scrollTop
+		})
+		$('.zhengce').click(function(){
+			$('.yinsi_box').show()
+		})
+		$('.close_box').click(function(){
+			$('.yinsi_box').hide()
+		})
+		var check = 0
+		console.log(check)
+		$('.weixuan').click(function() {
+			$(this).hide();
+			$('.yiyuan').show();
+			check = 1;
+			console.log(check)
+		})
+		$('.yiyuan').click(function() {
+			$(this).hide();
+			$('.weixuan').show();
+			check = 0;
+			console.log(check)
+		})
+		var phone = 15589819668
+		var add_con=''
+		// 省的内容
+		var sheng_text=''
+		var city_text=''
+		$('.adress').bind('input propertychange', function() {
+			add_con = $(this).val();
+		});
+		$.ajax({
+			url: url + '/index.php?g=Fawtoyota&m=Subscribe&a=phone_desc',
+			data: {
+				phone: phone
+			},
+			dataType: "json",
+			success: function(data) {
+				// console.log(data)
+				if (data.status == 200) {
+					// 两个页面的显示隐藏
+					if (data.data.orderpaysort <= 100) {
+						$('.fir_libao').show();
+						$('.sec_libao').hide();
+						$('.succ').hide();
+						$('.lose').hide();
+					} else if (data.data.orderpaysort > 100) {
+						$('.sec_libao').show();
+						$('.fir_libao').hide();
+						$('.succ').hide();
+						$('.lose').hide();
+					}
+					// 名次
+					$('.mingci').html(data.data.orderpaysort)
+					// 礼物
+					if (data.data.last_jp == 'A') {
+						$('.gift').html('（防水脚垫+后备箱垫+座椅靠垫）')
+						$('.jiazhi').html('价值1800元的越享礼包')
+					} else if (data.data.last_jp == 'B') {
+						$('.gift').html('（防水脚垫+后备箱垫）')
+						$('.jiazhi').html('价值600元的越享礼包')
+					}
+				}
+			}
+		});
+		// 省
+		$.ajax({
+			url: url + '/index.php?g=Fawtoyota&m=Dealer&a=provinceNameList',
+			data: {
+
+			},
+			dataType: 'json',
+			success: function(data) {
+				// console.log(data)
+				var shengStr = data;
+				var sheng_data = shengStr.data
+				// console.log(sheng_data)
+				var picker = '';
+				$.each(sheng_data, function(i, obj) {
+					picker += '<option value="' + obj.id + '">'
+					picker += obj.area_name
+					picker += '</option>'
+				})
+				$('.sheng').append(picker)
+			},
+			error: function(error) {
+				console.log(error)
+			}
+		})
+		
+		// 省改变后
+		$(".sheng").change(function(e) {
+			//要触发的事件
+			var sheng_val = $(this).find('option:selected').val();
+			sheng_text = $(this).find('option:selected').text();
+			// var sheng_val = $('.sheng option:selected').val();
+			// 获取市
+			$.ajax({
+				url: url + '/index.php?g=Fawtoyota&m=Dealer&a=cityNameList',
+				data: {
+					parent_id: sheng_val
+				},
+				dataType: 'json',
+				success: function(data) {
+					// console.log(data)
+					var shiStr = data;
+					var shi_data = shiStr.data
+					console.log(shi_data)
+					$('.city').html('<option>市</option>')
+					var picker = '';
+					$.each(shi_data, function(i, obj) {
+						picker += '<option>'
+						picker += obj.area_name
+						picker += '</option>'
+					})
+					$('.city').append(picker)
+				},
+				error: function(error) {
+					console.log(error)
+				}
+			})
+		});
+		// 市改变后
+		$(".city").change(function(e) {
+			city_text = $(this).find('option:selected').text();
+		})
+		// 提交
+		$('.tijiao').click(function() {
+			console.log(phone)
+			console.log(sheng_text)
+			console.log(city_text)
+			console.log(add_con)
+			console.log(check)
+			if (phone == '') {
+				return;
+			} else if (sheng_text == '省（市）') {
+				alert('请完善信息');
+				return;
+			} else if (city_text == '' || city_text == '市') {
+				alert('请完善信息');
+				return;
+			} else if (add_con.length == 0) {
+				alert('请完善信息');
+				return;
+			} else if (add_con.match(/^\s+$/)) {
+				alert('请完善信息');
+				return;
+			} else if (check == 0) {
+				alert('请勾选隐私政策');
+				return;
+			}
+
+			$.ajax({
+				url: url + '/index.php?g=Fawtoyota&m=Subscribe&a=zj_address',
+				data: {
+					phone: phone,
+					yj_provincename: sheng_text,
+					yj_cityname: city_text,
+					yj_address: add_con
+				},
+				dataType: "json",
+				success: function(data) {
+					console.log(data)
+					if(data.status==200){
+						alert('提交成功');
+					}
+				}
+			});
+		})
+		// 升级
+		$('.shengji').click(function(){
+			$.ajax({
+				url: url + '/index.php?g=Fawtoyota&m=Subscribe&a=isNot',
+				data: {
+					phone: phone
+				},
+				dataType: "json",
+				success: function(data) {
+					console.log(data)
+					if (data.status == 200) {
+						$('.fir_libao').hide();
+						$('.sec_libao').hide();
+						$('.succ').show();
+						$('.lose').hide();
+						
+					}else if(data.status == 300){
+						$('.fir_libao').hide();
+						$('.sec_libao').hide();
+						$('.succ').hide();
+						$('.lose').show();
+					}else if(data.status == 600){
+						alert('已经参与过升级啦')
+					}
+				}
+			});
+		})
+	</script>
+</html>
