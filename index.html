@@ -92,7 +92,9 @@
 				<div class="shengshi" style="margin-top: -0.4rem;">
 					<p class="erdiansan xiala_box">
 						<img src="img/xiala.png" alt="" class="xiala">
-						<select class="sheng" name="sheng"></select>
+						<select class="sheng" name="sheng">
+							<option>省（市）</option>
+						</select>
 					</p>
 					<p class="erdianleft xiala_box">
 						<img src="img/xiala.png" alt="" class="xiala">
@@ -125,7 +127,9 @@
 				<div class="shengshi" style="margin-top: -0.4rem;">
 					<p class="erdiansan xiala_box">
 						<img src="img/xiala.png" alt="" class="xiala">
-						<select class="sheng" name="sheng"></select>
+						<select class="sheng" name="sheng">
+							<option>省（市）</option>
+						</select>
 					</p>
 					<p class="erdianleft xiala_box">
 						<img src="img/xiala.png" alt="" class="xiala">
@@ -155,7 +159,9 @@
 							<img src="img/fenge.png" alt="" class="xian">
 							<div class="yinsi_con">
 								<p class="bols">一汽丰田顾客个人信息保护基本方针</p>
-								<p>一汽丰田汽车销售有限公司(以下简称“一汽丰田销售”)、一汽丰田销售认定的经销商（以下简称 “一汽丰田经销商”）及其各自的关联公司（包括但不限于其各自的母公司、车辆的制造公司及丰田汽车（中国）投资有限公司）（以下将“一汽丰田销售”、“一汽丰田经销商”及其各自的关联公司统称为“一汽丰田”）认为严格遵守个人信息保护相关的中国法律法规，妥善处理顾客个人姓名、地址、电话号码、邮箱地址等 能够识别顾客个人及其家庭成员身份的信息（以下简称“个人信息”），是企业重要的社会责任。基于此，“一汽丰田”制定了如下的保护个人信息基本方针。</p>
+								<p>一汽丰田汽车销售有限公司(以下简称“一汽丰田销售”)、一汽丰田销售认定的经销商（以下简称
+									“一汽丰田经销商”）及其各自的关联公司（包括但不限于其各自的母公司、车辆的制造公司及丰田汽车（中国）投资有限公司）（以下将“一汽丰田销售”、“一汽丰田经销商”及其各自的关联公司统称为“一汽丰田”）认为严格遵守个人信息保护相关的中国法律法规，妥善处理顾客个人姓名、地址、电话号码、邮箱地址等
+									能够识别顾客个人及其家庭成员身份的信息（以下简称“个人信息”），是企业重要的社会责任。基于此，“一汽丰田”制定了如下的保护个人信息基本方针。</p>
 								<p class="bols">1.个人信息的取得</p>
 								<p>1)“一汽丰田”于以下情形取得个人信息：</p>
 								<p>① 销售产品、提供服务时取得的个人信息；</p>
@@ -196,6 +202,13 @@
 				<div class="close_box"><img src="img/cha.png" alt=""></div>
 				<div class="alert_con"></div>
 			</div>
+			<!-- 成功 -->
+			<div class="cheng_box">
+				<div class="close_box"><img src="img/cha.png" alt=""></div>
+				<div class="cheng_con">
+					<p>您的信息已提交成功如需修改请拨打客服电话400 810 1210</p>
+				</div>
+			</div>
 			<!-- 活动未开始已结束 -->
 			<div class="huodong_box">
 				<div class="huodong_box_con"></div>
@@ -204,6 +217,29 @@
 	</body>
 	<script>
 		var url = 'https://intf.rfdev.test511.com'
+		var my_phone = ''
+		getUrlArgStr();
+		//获取页面参数
+		function getUrlArgStr() {
+			var q = window.location.search.substr(1);
+			// console.log('link_url=' + q);
+			// var q='mobile=13436390373&token=NPTORADOHAKATCDGQMLEPFEQSPBOCUCLLLCBZOXJZMWWRUOZKKUJFBHVZLBJ&orderChannel=sc_banner_yhct'
+			// var q='mobile=13436390373&token=RDYMZJBMLGVQEKNAZBLDCMZZJJMOSYOQWMUXHLGCQDPXSROVSRSCWQCTMVDG&orderChannel=chexun_yhct'
+			var qs = q.split('&');
+			// console.log(qs)
+			var argStr = [];
+			if (qs) {
+				for (var i = 0; i < qs.length; i++) {
+					argStr.push(qs[i].substring(qs[i].indexOf('=') + 1));
+				}
+				my_phone = argStr[0];
+				// if (my_orderid == 'undefined') {
+				// 	my_orderid = '01';
+				// }
+				console.log('my_phone=' + my_phone)
+			}
+			return argStr;
+		}
 		if ($(window).width() >= 750) {
 			document.documentElement.style.fontSize = document.documentElement.clientWidth * 100 / 1920 + "px";
 			window.addEventListener("resize", function() {
@@ -223,19 +259,22 @@
 
 		}
 		$("input").blur(function() {
-			// window.parent.postMessage(3, '*');
+			window.parent.postMessage(3, '*');
 			document.body.scrollTop = document.body.scrollTop
 		});
 		$('select').blur(function() {
-			// window.parent.postMessage(3, '*');
+			window.parent.postMessage(3, '*');
 			document.body.scrollTop = document.body.scrollTop
 		})
-		$('.zhengce').click(function(){
+		$('.zhengce').click(function() {
 			$('.yinsi_box').show()
+			window.parent.postMessage(1, '*');
 		})
-		$('.close_box').click(function(){
+		$('.close_box').click(function() {
 			$('.yinsi_box').hide();
 			$('.alert_box').hide();
+			$('.cheng_box').hide();
+			window.parent.postMessage(2, '*');
 		})
 		var check = 0
 		console.log(check)
@@ -251,13 +290,13 @@
 			check = 0;
 			console.log(check)
 		})
-		var phone = 15589819668
-		
+		// var phone = 15589819668
+
 		// 倒计时
 		setTimeout("is_order()", 1000);
 		setTimeout("is_end()", 1000);
 		var start_order_time = new Date("2019/09/19 18:25:00"); // 设定开始时间
-		var end_time = new Date("2019/09/19 19:50:00");//设定结束时间
+		var end_time = new Date("2019/10/24 23:59:59"); //设定结束时间
 		//判断是否开始
 		function is_order() {
 			var time_now = new Date(); // 获取当前时间
@@ -268,11 +307,11 @@
 			if (end_time_distance > 0) {
 				if (order_time_distance >= 0) {
 					setTimeout("is_order()", 1000);
-					console.log('未开始+活动未开始弹框')
+					// console.log('未开始+活动未开始弹框')
 					$('.huodong_box_con').html('活动未开始')
 					$('.huodong_box').show();
 				} else if (order_time_distance < 0) {
-					console.log("开始了")
+					// console.log("开始了")
 				}
 			} else {
 				console.log(end_time_distance)
@@ -309,29 +348,29 @@
 				// } else {
 				// 	// console.log(int_day)
 				// }
-				console.log('未结束')
+				// console.log('未结束')
 			} else if (end_time_distance < 0) {
-				console.log("结束了+活动已结束弹框");
+				// console.log("结束了+活动已结束弹框");
 				$('.huodong_box_con').html('活动已结束')
 				$('.huodong_box').show();
 			}
 		}
 		// 地址
-		var add_con=''
+		var add_con = ''
 		// 省的内容
-		var sheng_text=''
-		var city_text=''
+		var sheng_text = ''
+		var city_text = ''
 		$('.adress').bind('input propertychange', function() {
 			add_con = $(this).val();
 		});
 		$.ajax({
 			url: url + '/index.php?g=Fawtoyota&m=Subscribe&a=phone_desc',
 			data: {
-				phone: phone
+				phone: my_phone
 			},
 			dataType: "json",
 			success: function(data) {
-				// console.log(data)
+				console.log(data)
 				if (data.status == 200) {
 					// 两个页面的显示隐藏
 					if (data.data.orderpaysort <= 100) {
@@ -355,34 +394,50 @@
 						$('.gift').html('（防水脚垫+后备箱垫）')
 						$('.jiazhi').html('价值600元的越享礼包')
 					}
+					// 地址
+					if (data.data.yj_provincename == '' || data.data.yj_provincename == null && data.data.yj_cityname == '' || data
+						.data.yj_cityname == null && data.data.yj_address == '' || data.data.yj_address == null) {
+						console.log('没有地址')
+						// 省
+						$.ajax({
+							url: url + '/index.php?g=Fawtoyota&m=Dealer&a=provinceNameList',
+							data: {
+
+							},
+							dataType: 'json',
+							success: function(data) {
+								// console.log(data)
+								var shengStr = data;
+								var sheng_data = shengStr.data
+								// console.log(sheng_data)
+								var picker = '';
+								$.each(sheng_data, function(i, obj) {
+									picker += '<option value="' + obj.id + '">'
+									picker += obj.area_name
+									picker += '</option>'
+								})
+								$('.sheng').append(picker)
+							},
+							error: function(error) {
+								console.log(error)
+							}
+						})
+					}else{
+						$("select").attr("disabled", "disabled");
+						$('.sheng option').html(data.data.yj_provincename)
+						$('.city option').html(data.data.yj_cityname)
+						$('.adress').val(data.data.yj_address)
+						$(".adress").attr("readOnly", "true");
+						$('.tijiao').hide();
+						$('.xiala').hide();
+						console.log('有地址')
+					}
+
 				}
 			}
 		});
-		// 省
-		$.ajax({
-			url: url + '/index.php?g=Fawtoyota&m=Dealer&a=provinceNameList',
-			data: {
 
-			},
-			dataType: 'json',
-			success: function(data) {
-				// console.log(data)
-				var shengStr = data;
-				var sheng_data = shengStr.data
-				// console.log(sheng_data)
-				var picker = '';
-				$.each(sheng_data, function(i, obj) {
-					picker += '<option value="' + obj.id + '">'
-					picker += obj.area_name
-					picker += '</option>'
-				})
-				$('.sheng').append(picker)
-			},
-			error: function(error) {
-				console.log(error)
-			}
-		})
-		
+
 		// 省改变后
 		$(".sheng").change(function(e) {
 			//要触发的事件
@@ -421,39 +476,44 @@
 		})
 		// 提交
 		$('.tijiao').click(function() {
-			console.log(phone)
+			console.log(my_phone)
 			console.log(sheng_text)
 			console.log(city_text)
 			console.log(add_con)
 			console.log(check)
-			if (phone == '') {
+			if (my_phone == '') {
 				return;
 			} else if (sheng_text == '省（市）') {
 				$('.alert_con').html('请完善信息')
 				$('.alert_box').show();
+				window.parent.postMessage(1, '*');
 				return;
 			} else if (city_text == '' || city_text == '市') {
 				$('.alert_con').html('请完善信息')
 				$('.alert_box').show();
+				window.parent.postMessage(1, '*');
 				return;
 			} else if (add_con.length == 0) {
 				$('.alert_con').html('请完善信息')
 				$('.alert_box').show();
+				window.parent.postMessage(1, '*');
 				return;
 			} else if (add_con.match(/^\s+$/)) {
 				$('.alert_con').html('请完善信息')
 				$('.alert_box').show();
+				window.parent.postMessage(1, '*');
 				return;
 			} else if (check == 0) {
 				$('.alert_con').html('请勾选隐私政策')
 				$('.alert_box').show();
+				window.parent.postMessage(1, '*');
 				return;
 			}
 
 			$.ajax({
 				url: url + '/index.php?g=Fawtoyota&m=Subscribe&a=zj_address',
 				data: {
-					phone: phone,
+					phone: my_phone,
 					yj_provincename: sheng_text,
 					yj_cityname: city_text,
 					yj_address: add_con
@@ -461,19 +521,31 @@
 				dataType: "json",
 				success: function(data) {
 					console.log(data)
-					if(data.status==200){
-						$('.alert_con').html('添加成功')
-						$('.alert_box').show();
+					if (data.status == 200) {
+						// 成功后弹框提醒
+						$('.cheng_box').show();
+						window.parent.postMessage(1, '*');
+						// 成功后赋值
+						$('.sheng option').html(sheng_text);
+						$('.city option').html(city_text);
+						// 成功后不可编辑
+						$("select").attr("disabled", "disabled");
+						$('.adress').val(add_con);
+						$(".adress").attr("readOnly", "true");
+						// 成功后提交按钮隐藏
+						$('.tijiao').hide();
+						$('.xiala').hide();
+						console.log('有地址')
 					}
 				}
 			});
 		})
 		// 升级
-		$('.shengji').click(function(){
+		$('.shengji').click(function() {
 			$.ajax({
 				url: url + '/index.php?g=Fawtoyota&m=Subscribe&a=isNot',
 				data: {
-					phone: phone
+					phone: my_phone
 				},
 				dataType: "json",
 				success: function(data) {
@@ -483,13 +555,20 @@
 						$('.sec_libao').hide();
 						$('.succ').show();
 						$('.lose').hide();
-						
-					}else if(data.status == 300){
+						$('.yiyuan').hide();
+						$('.weixuan').show();
+						$('.gift').html('（防水脚垫+后备箱垫+座椅靠垫）')
+						$('.jiazhi').html('价值1800元的越享礼包')
+					} else if (data.status == 300) {
 						$('.fir_libao').hide();
 						$('.sec_libao').hide();
 						$('.succ').hide();
 						$('.lose').show();
-					}else if(data.status == 600){
+						$('.yiyuan').hide();
+						$('.weixuan').show();
+						$('.gift').html('（防水脚垫+后备箱垫）')
+						$('.jiazhi').html('价值600元的越享礼包')
+					} else if (data.status == 600) {
 						// alert('已经参与过升级啦')
 					}
 				}

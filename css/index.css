@@ -72,7 +72,9 @@ input {
 	height: 4.07rem;
 	display: block;
 }
-
+.diji span{
+	color: red;
+}
 .bott_A .diji {
 	text-align: center;
 	font-size: 0.36rem;
@@ -316,7 +318,7 @@ input::-webkit-input-placeholder {
 }
 
 .yinsi_box,
-.alert_box,.huodong_box{
+.alert_box,.huodong_box,.cheng_box{
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -358,7 +360,7 @@ input::-webkit-input-placeholder {
 	text-align: right;
 	position: absolute;
 	/* top: 19%; */
-	top: 13%;
+	top: 17%;
 	right: 17%;
 	z-index: 1;
 }
@@ -413,7 +415,7 @@ input::-webkit-input-placeholder {
 	text-align: right;
 	position: absolute;
 	/* top: 19%; */
-	top: 35%;
+	top: 25%;
 	right: 17%;
 	z-index: 1;
 }
@@ -435,9 +437,9 @@ input::-webkit-input-placeholder {
 	letter-spacing: 0.10rem;
 	color: #ffffff;
 	font-size: 0.34rem;
-	top: 0;
-	bottom: 0;
-	margin: auto;
+	top: 33%;
+	/* bottom: 0; */
+	/* margin: auto; */
 	left: 1.72rem;
 }
 
@@ -452,10 +454,48 @@ input::-webkit-input-placeholder {
 	letter-spacing: 0.10rem;
 	color: #ffffff;
 	font-size: 0.34rem;
-	top: 0;
-	bottom: 0;
-	margin: auto;
+	top: 33%;
+	/* bottom: 0; */
+	/* margin: auto; */
 	left: 1.72rem;
+}
+.cheng_box .close_box {
+	text-align: right;
+	position: absolute;
+	/* top: 19%; */
+	top: 25%;
+	right: 17%;
+	z-index: 1;
+}
+
+.cheng_box .close_box img {
+	width: 0.5rem;
+	height: 0.5rem;
+	margin: 2% 3% 0;
+}
+.cheng_box .cheng_con {
+	position: absolute;
+	width: 4.06rem;
+	height: 1.6rem;
+	background: url(../img/alert.png) no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+	/* line-height: 1.25rem; */
+	letter-spacing: 0.05rem;
+	color: #ffffff;
+	top: 33%;
+	/* bottom: 0; */
+	/* margin: auto; */
+	left: 1.72rem;
+	padding: 0 0.6rem;
+	box-sizing: border-box;
+}
+.cheng_box .cheng_con p{
+	font-size: 0.2rem;
+	    margin-top: 0.5rem;
+}
+.mingci{
+	color: red!important;
 }
 
 @media screen and (min-width: 750px) {
@@ -770,7 +810,7 @@ input::-webkit-input-placeholder {
 	.yinsi_box .close_box {
 		text-align: right;
 		position: absolute;
-		top: 3%;
+		top: 5%;
 		/* top: 10%; */
 		right: 36%;
 		z-index: 1;
@@ -826,7 +866,7 @@ input::-webkit-input-placeholder {
 		text-align: right;
 		position: absolute;
 		/* top: 19%; */
-		top: 20%;
+		top: 11%;
 		right: 29%;
 		z-index: 1;
 	}
@@ -848,9 +888,9 @@ input::-webkit-input-placeholder {
 		letter-spacing: 0.14rem;
 		color: #ffffff;
 		font-size: 0.48rem;
-		top: 0;
-		bottom: 0;
-		margin: auto;
+		top: 16%;
+		/* bottom: 0; */
+		/* margin: auto; */
 		left: 6.02rem;
 	}
 
@@ -865,9 +905,43 @@ input::-webkit-input-placeholder {
 		letter-spacing: 0.14rem;
 		color: #ffffff;
 		font-size: 0.48rem;
-		top: 0;
-		bottom: 0;
-		margin: auto;
+		top: 16%;
+		/* bottom: 0; */
+		/* margin: auto; */
 		left: 6.02rem;
+	}
+	.cheng_box .close_box {
+		text-align: right;
+		position: absolute;
+		/* top: 19%; */
+		top: 11%;
+		right: 29%;
+		z-index: 1;
+	}
+	
+	.cheng_box .close_box img {
+		width: 0.5rem;
+		height: 0.5rem;
+		margin: 2% 3% 0;
+	}
+	.cheng_box .cheng_con {
+		position: absolute;
+		width: 7.15rem;
+		height: 2.07rem;
+		background: url(../img/alert.png) no-repeat;
+		background-size: 100% 100%;
+		text-align: center;
+		/* line-height: 2.07rem; */
+		letter-spacing: 0.14rem;
+		color: #ffffff;
+		/* font-size: 0.48rem; */
+		top: 16%;
+		/* bottom: 0; */
+		/* margin: auto; */
+		left: 6.02rem;
+	}
+	.cheng_box .cheng_con p{
+		font-size: 0.24rem;
+		margin-top: 0.7rem;
 	}
 }
