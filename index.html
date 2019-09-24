@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+		<meta name="format-detection" content="telephone=no">
 		<script src="js/jquery-3.2.1.js"></script>
 		<script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js" type="text/javascript"></script>
 		<link rel="stylesheet" href="css/index.css">
@@ -12,46 +13,46 @@
 		<div class="back">
 			<!-- A -->
 			<div class="bott bott_A fir_libao" style="display: none;">
-				<img src="img/biao.png" alt="" class="tiaoti">
 				<p class="diji">您是第<span class="mingci"></span>位抢购用户</p>
 				<p class="gongxi">恭喜您获得<span class="jiazhi"></span></p>
 				<p class="gift"></p>
 				<img src="img/xian.jpg" alt="" class="xian">
-				<p class="tishi">为了您能及时收取礼包</p>
-				<p class="tishi pc_tishi" style="margin-top: 0.05rem;">请正确填写您的寄送地址</p>
-				<div class="shengshi" style="margin-top: -0.4rem;">
-					<p class="erdiansan xiala_box">
+
+				<div class="shengshi charu" style="margin-top: -0.5rem;">
+					<div class="erdiansan xiala_box">
 						<img src="img/xiala.png" alt="" class="xiala">
 						<select class="sheng" name="sheng">
 							<option>省（市）</option>
 						</select>
-					</p>
-					<p class="erdianleft xiala_box">
+						<!-- <p style="font-size: 0.32rem;">1111111111</p> -->
+					</div>
+					<div class="erdianleft xiala_box">
 						<img src="img/xiala.png" alt="" class="xiala">
 						<select class="city" name="city">
 							<option value="">市</option>
 						</select>
-					</p>
+						<!-- <p style="font-size: 0.32rem;">1111111111</p> -->
+					</div>
 				</div>
-				<div class="shengshi pc_shengshi" style="margin-top: 0.2rem;">
+				<div class="shengshi pc_shengshi" style="margin-top: 0rem;">
 					<input type="text" placeholder="详细地址" class="adress">
 				</div>
 				<p class="beizhu">备注：本次礼包寄送地址不包含港、澳、台等地区</p>
-				<p class="beizhu pc_beizhu" style="margin-top: 0.2rem;">
+				<p class="beizhu pc_beizhu shandiao" style="margin-top: 0.1rem;">
 					<img src="img/weixuan.png" alt="" class="xuanze weixuan">
 					<img src="img/xuanzhong.png" alt="" class="xuanze yiyuan" style="display: none;">
 					我已阅读并同意<span class="zhengce">《隐私政策》</span>
 				</p>
-				<img src="img/tijiao.png" class="tijiao">
+				<img src="img/tijiao.png" class="tijiao tijiao3">
+				<img src="img/tijiao2.png" class="tijiao2 tijiao3" style="display: none;">
 			</div>
 			<!-- B -->
-			<div class="bott bott_B sec_libao" style="display: none;">
-				<img src="img/biao.png" alt="" class="tiaoti">
+			<div class="bott bott_A sec_libao" style="display: none;">
 				<p class="diji">您是第<span class="mingci"></span>位抢购用户</p>
 				<p class="gongxi">恭喜您获得<span class="jiazhi"></span></p>
 				<p class="gift"></p>
-				<p class="tishi">为了您能及时收取礼包,请正确填写您的寄送地址</p>
-				<div class="shengshi" style="margin-top: -0.5rem;">
+				<img src="img/xian.jpg" alt="" class="xian">
+				<div class="shengshi charu" style="margin-top: -0.3rem;">
 					<p class="erdiansan xiala_box">
 						<img src="img/xiala.png" alt="" class="xiala">
 						<select class="sheng" name="sheng">
@@ -69,27 +70,25 @@
 					<input type="text" placeholder="详细地址" class="adress">
 				</div>
 				<p class="beizhu">备注：本次礼包寄送地址不包含港、澳、台等地区</p>
-				<p class="beizhu" style="margin-top: 0.2rem;">
+				<p class="beizhu shandiao" style="margin-top: 0.1rem;">
 					<img src="img/weixuan.png" alt="" class="xuanze weixuan">
 					<img src="img/xuanzhong.png" alt="" class="xuanze yiyuan" style="display: none;">
 					我已阅读并同意<span class="zhengce">《隐私政策》</span>
 				</p>
-				<img src="img/tijiao.png" class="tijiao">
-				<img src="img/xian.jpg" alt="" class="xian">
+				<img src="img/tijiao.png" class="tijiao tijiao3">
+				<img src="img/tijiao2.png" class="tijiao2 tijiao3" style="display: none;">
+				<!-- <img src="img/xian.jpg" alt="" class="xian">
 				<p class="dianji">点击“升级礼包”即有机会获得更多惊喜</p>
 				<div class="dibu">
 					<img src="img/shengji.png" class="shengji">
-				</div>
+				</div> -->
 			</div>
 			<!-- 成功 -->
 			<div class="bott bott_A succ" style="display: none;">
-				<img src="img/biao.png" alt="" class="tiaoti">
-				<p class="gongxi">恭喜您<span>礼包价值升级为1800元</span></p>
+				<p class="gongxi">恭喜您<span>礼包价值升级为1688元</span></p>
 				<p class="gift">（防水脚垫+后备箱垫+座椅靠垫）</p>
 				<img src="img/xian.jpg" alt="" class="xian">
-				<p class="tishi">为了您能及时收取礼包</p>
-				<p class="tishi pc_tishi" style="margin-top: 0.05rem;">请正确填写您的寄送地址</p>
-				<div class="shengshi" style="margin-top: -0.4rem;">
+				<div class="shengshi charu" style="margin-top: -0.4rem;">
 					<p class="erdiansan xiala_box">
 						<img src="img/xiala.png" alt="" class="xiala">
 						<select class="sheng" name="sheng">
@@ -107,24 +106,19 @@
 					<input type="text" placeholder="详细地址" class="adress">
 				</div>
 				<p class="beizhu">备注：本次礼包寄送地址不包含港、澳、台等地区</p>
-				<p class="beizhu pc_beizhu" style="margin-top: 0.2rem;">
+				<p class="beizhu pc_beizhu shandiao" style="margin-top: 0.2rem;">
 					<img src="img/weixuan.png" alt="" class="xuanze weixuan">
 					<img src="img/xuanzhong.png" alt="" class="xuanze yiyuan" style="display: none;">
 					我已阅读并同意<span class="zhengce">《隐私政策》</span>
 				</p>
-				<img src="img/tijiao.png" class="tijiao">
+				<!-- <img src="img/tijiao.png" class="tijiao"> -->
 			</div>
 			<!-- 失败 -->
 			<div class="bott bott_A lose" style="display: none;">
-				<img src="img/biao.png" alt="" class="tiaoti">
-				<p class="gongxi" style="margin-top: 0.2rem;">很遗憾</p>
-				<p class="gongxi" style="margin-top: 0.2rem;">您的礼包没能获得升级</p>
 				<p class="yuexiang">您的越享礼包为</p>
-				<p class="gift" style="margin-top: 0.2rem;">（后备箱垫+座椅靠垫）</p>
+				<p class="gift" style="margin-top: 0.05rem;">（后备箱垫+座椅靠垫）</p>
 				<img src="img/xian.jpg" alt="" class="xian">
-				<p class="tishi">为了您能及时收取礼包</p>
-				<p class="tishi pc_tishi" style="margin-top: 0.05rem;">请正确填写您的寄送地址</p>
-				<div class="shengshi" style="margin-top: -0.4rem;">
+				<div class="shengshi charu" style="margin-top: -0.5rem;">
 					<p class="erdiansan xiala_box">
 						<img src="img/xiala.png" alt="" class="xiala">
 						<select class="sheng" name="sheng">
@@ -142,12 +136,12 @@
 					<input type="text" placeholder="详细地址" class="adress">
 				</div>
 				<p class="beizhu">备注：本次礼包寄送地址不包含港、澳、台等地区</p>
-				<p class="beizhu pc_beizhu" style="margin-top: 0.2rem;">
+				<p class="beizhu pc_beizhu shandiao" style="margin-top: 0.05rem;">
 					<img src="img/weixuan.png" alt="" class="xuanze weixuan">
 					<img src="img/xuanzhong.png" alt="" class="xuanze yiyuan" style="display: none;">
 					我已阅读并同意<span class="zhengce">《隐私政策》</span>
 				</p>
-				<img src="img/tijiao.png" class="tijiao">
+				<!-- <img src="img/tijiao.png" class="tijiao"> -->
 			</div>
 			<!-- 隐私弹框 -->
 			<div class="yinsi_box">
@@ -206,7 +200,9 @@
 			<div class="cheng_box">
 				<div class="close_box"><img src="img/cha.png" alt=""></div>
 				<div class="cheng_con">
-					<p>您的信息已提交成功如需修改请拨打客服电话400 810 1210</p>
+					<p>您的信息已提交成功</p>
+					<p style="margin-top: 0;">如需修改请拨打客服电话</p>
+					<p style="color: #fff;margin-top: 0;">400 810 1210</p>
 				</div>
 			</div>
 			<!-- 活动未开始已结束 -->
@@ -216,7 +212,8 @@
 		</div>
 	</body>
 	<script>
-		var url = 'https://intf.rfdev.test511.com'
+		var url = 'https://intf.rfdev.test511.com'  //cs
+		// var url = 'https://intf.rav4.test511.com'  //zs
 		var my_phone = ''
 		getUrlArgStr();
 		//获取页面参数
@@ -247,7 +244,8 @@
 			}, false)
 			$('.back').prepend('<img src="img/pc.png" class="beiji">')
 			// $(".beiji").attr("src", "http://intf.phev.test511.com/pc.jpg");
-
+			$('.charu').before('<p class="tishi">为了您能及时收取礼包，请正确填写您的寄送地址</p>')
+			$('.yuexiang').before('<p class="gongxi">很遗憾，您的礼包没能获得升级</p>')
 
 		} else if ($(window).width() < 750) {
 			document.documentElement.style.fontSize = document.documentElement.clientWidth * 100 / 750 + "px";
@@ -256,7 +254,9 @@
 			}, false)
 			$('.back').prepend('<img src="img/wap.png" class="beiji">')
 			// $(".beiji").attr("src", "http://intf.phev.test511.com/wap.jpg");
-
+			$('.charu').before(
+				'<p class="tishi">为了您能及时收取礼包</p><p class="tishi pc_tishi" style="margin-top: 0.05rem;">请正确填写您的寄送地址</p>')
+			$('.yuexiang').before('<p class="gongxi">很遗憾</p><p class="gongxi">您的礼包没能获得升级</p>')
 		}
 		$("input").blur(function() {
 			window.parent.postMessage(3, '*');
@@ -360,6 +360,7 @@
 		// 省的内容
 		var sheng_text = ''
 		var city_text = ''
+		var paiwei = ''
 		$('.adress').bind('input propertychange', function() {
 			add_con = $(this).val();
 		});
@@ -372,27 +373,42 @@
 			success: function(data) {
 				console.log(data)
 				if (data.status == 200) {
+					paiwei = data.data.orderpaysort
 					// 两个页面的显示隐藏
 					if (data.data.orderpaysort <= 100) {
 						$('.fir_libao').show();
 						$('.sec_libao').hide();
 						$('.succ').hide();
 						$('.lose').hide();
+						$('.tijiao').show();
+						$('.tijiao2').hide();
 					} else if (data.data.orderpaysort > 100) {
 						$('.sec_libao').show();
 						$('.fir_libao').hide();
 						$('.succ').hide();
 						$('.lose').hide();
+						$('.tijiao').hide();
+						$('.tijiao2').show();
 					}
 					// 名次
 					$('.mingci').html(data.data.orderpaysort)
 					// 礼物
 					if (data.data.last_jp == 'A') {
 						$('.gift').html('（防水脚垫+后备箱垫+座椅靠垫）')
-						$('.jiazhi').html('价值1800元的越享礼包')
+						// $('.jiazhi').html('价值1688元的越享礼包')
+						if(data.data.zj_status==1){
+							$('.gongxi').html('恭喜您升级为<span class="jiazhi">价值1688元的越享礼包</span>')
+						}else{
+							$('.gongxi').html('恭喜您获得<span class="jiazhi">价值1688元的越享礼包</span>')
+						}
 					} else if (data.data.last_jp == 'B') {
 						$('.gift').html('（防水脚垫+后备箱垫）')
-						$('.jiazhi').html('价值600元的越享礼包')
+						// $('.jiazhi').html('价值600元的越享礼包')
+						if(data.data.zj_status==1){
+							$('.gongxi').html('恭喜您升级为<span class="jiazhi">价值600元的越享礼包</span>')
+						}else{
+							$('.gongxi').html('恭喜您获得<span class="jiazhi">价值600元的越享礼包</span>')
+						}
 					}
 					// 地址
 					if (data.data.yj_provincename == '' || data.data.yj_provincename == null && data.data.yj_cityname == '' || data
@@ -422,14 +438,16 @@
 								console.log(error)
 							}
 						})
-					}else{
+					} else {
 						$("select").attr("disabled", "disabled");
 						$('.sheng option').html(data.data.yj_provincename)
 						$('.city option').html(data.data.yj_cityname)
 						$('.adress').val(data.data.yj_address)
 						$(".adress").attr("readOnly", "true");
-						$('.tijiao').hide();
+						$('.tijiao3').hide();
 						$('.xiala').hide();
+						$('.shandiao').hide();
+						$('.tishi').hide();
 						console.log('有地址')
 					}
 
@@ -475,7 +493,7 @@
 			city_text = $(this).find('option:selected').text();
 		})
 		// 提交
-		$('.tijiao').click(function() {
+		$('.tijiao3').click(function() {
 			console.log(my_phone)
 			console.log(sheng_text)
 			console.log(city_text)
@@ -509,7 +527,6 @@
 				window.parent.postMessage(1, '*');
 				return;
 			}
-
 			$.ajax({
 				url: url + '/index.php?g=Fawtoyota&m=Subscribe&a=zj_address',
 				data: {
@@ -533,46 +550,55 @@
 						$('.adress').val(add_con);
 						$(".adress").attr("readOnly", "true");
 						// 成功后提交按钮隐藏
-						$('.tijiao').hide();
+						$('.tijiao3').hide();
 						$('.xiala').hide();
+						$('.shandiao').hide();
+						$('.tishi').hide();
 						console.log('有地址')
+						console.log(paiwei)
+						if (paiwei > 100) {
+							$.ajax({
+								url: url + '/index.php?g=Fawtoyota&m=Subscribe&a=isNot',
+								data: {
+									phone: my_phone
+								},
+								dataType: "json",
+								success: function(data) {
+									console.log(data)
+									if (data.status == 200) {
+										$('.fir_libao').hide();
+										$('.sec_libao').hide();
+										$('.succ').show();
+										$('.lose').hide();
+										$('.yiyuan').hide();
+										$('.weixuan').show();
+										$('.shandiao').hide();
+										$('.tishi').hide();
+										$('.gift').html('（防水脚垫+后备箱垫+座椅靠垫）')
+										$('.gongxi').html('恭喜您升级为<span class="jiazhi">价值1688元的越享礼包</span>')
+									} else if (data.status == 300) {
+										$('.fir_libao').hide();
+										$('.sec_libao').hide();
+										$('.succ').hide();
+										$('.lose').show();
+										$('.yiyuan').hide();
+										$('.weixuan').show();
+										$('.shandiao').hide();
+										$('.tishi').hide();
+										// $('.yuexiang').before('<p class="gongxi">很遗憾</p><p class="gongxi">您的礼包没能获得升级</p>')
+										$('.gift').html('（防水脚垫+后备箱垫）')
+										$('.jiazhi').html('价值600元的越享礼包')
+									} else if (data.status == 600) {
+										// alert('已经参与过升级啦')
+									}
+								}
+							});
+						}
 					}
 				}
 			});
-		})
-		// 升级
-		$('.shengji').click(function() {
-			$.ajax({
-				url: url + '/index.php?g=Fawtoyota&m=Subscribe&a=isNot',
-				data: {
-					phone: my_phone
-				},
-				dataType: "json",
-				success: function(data) {
-					console.log(data)
-					if (data.status == 200) {
-						$('.fir_libao').hide();
-						$('.sec_libao').hide();
-						$('.succ').show();
-						$('.lose').hide();
-						$('.yiyuan').hide();
-						$('.weixuan').show();
-						$('.gift').html('（防水脚垫+后备箱垫+座椅靠垫）')
-						$('.jiazhi').html('价值1800元的越享礼包')
-					} else if (data.status == 300) {
-						$('.fir_libao').hide();
-						$('.sec_libao').hide();
-						$('.succ').hide();
-						$('.lose').show();
-						$('.yiyuan').hide();
-						$('.weixuan').show();
-						$('.gift').html('（防水脚垫+后备箱垫）')
-						$('.jiazhi').html('价值600元的越享礼包')
-					} else if (data.status == 600) {
-						// alert('已经参与过升级啦')
-					}
-				}
-			});
+
+
 		})
 	</script>
 </html>

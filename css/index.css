@@ -63,15 +63,11 @@ input {
 	width: 100%;
 	overflow: hidden;
 	position: absolute;
-	top: 1.98rem;
+	top: 3.85rem;
 	left: 0;
 }
 
-.tiaoti {
-	width: 100%;
-	height: 4.07rem;
-	display: block;
-}
+
 .diji span{
 	color: red;
 }
@@ -87,7 +83,7 @@ input {
 	font-size: 0.36rem;
 	color: #85b9ff;
 	letter-spacing: 0.05rem;
-	margin-top: 0.3rem;
+	margin-top: 0.1rem;
 }
 
 .bott_A .gongxi span {
@@ -100,7 +96,7 @@ input {
 	letter-spacing: 0.04rem;
 	color: #85b9ff;
 	text-align: center;
-	margin-top: 0.3rem;
+	margin-top: 0.1rem;
 }
 
 .bott_A .xian {
@@ -108,7 +104,7 @@ input {
 	height: 0.24rem;
 	margin: auto;
 	display: block;
-	margin-top: 0.25rem;
+	margin-top: 0.05rem;
 }
 
 .bott_A .tishi {
@@ -116,7 +112,7 @@ input {
 	font-size: 0.3rem;
 	color: #85b9ff;
 	letter-spacing: 0.06rem;
-	margin-top: 0.3rem;
+	margin-top: 0.1rem;
 }
 
 .shengshi {
@@ -191,7 +187,7 @@ input::-webkit-input-placeholder {
 	display: flex;
 	align-items: center;
 	margin-left: 1.08rem;
-	margin-top: 0.33rem;
+	margin-top: 0.23rem;
 }
 
 .xuanze {
@@ -203,7 +199,7 @@ input::-webkit-input-placeholder {
 .bott_A .tijiao {
 	width: 2.19rem;
 	height: 0.64rem;
-	margin: 0.75rem auto 0;
+	margin: 0.45rem auto 0;
 	display: block;
 }
 
@@ -211,7 +207,7 @@ input::-webkit-input-placeholder {
 	width: 100%;
 	overflow: hidden;
 	position: absolute;
-	top: 1.32rem;
+	top: 1.98rem;
 	left: 0;
 }
 
@@ -227,7 +223,7 @@ input::-webkit-input-placeholder {
 	font-size: 0.36rem;
 	color: #85b9ff;
 	letter-spacing: 0.05rem;
-	margin-top: 0.1rem;
+	margin-top: 0.3rem;
 }
 
 .bott_B .gongxi span {
@@ -240,7 +236,7 @@ input::-webkit-input-placeholder {
 	letter-spacing: 0.04rem;
 	color: #85b9ff;
 	text-align: center;
-	margin-top: 0.1rem;
+	margin-top: 0.3rem;
 }
 
 .bott_B .tishi {
@@ -248,7 +244,7 @@ input::-webkit-input-placeholder {
 	font-size: 0.24rem;
 	color: #85b9ff;
 	letter-spacing: 0.06rem;
-	margin-top: 0.3rem;
+	margin-top: 0.4rem;
 }
 
 .bott_B .beizhu {
@@ -257,13 +253,13 @@ input::-webkit-input-placeholder {
 	display: flex;
 	align-items: center;
 	margin-left: 1.08rem;
-	margin-top: 0.2rem;
+	margin-top: 0.4rem;
 }
 
 .bott_B .tijiao {
 	width: 2.19rem;
 	height: 0.64rem;
-	margin: 0.55rem auto 0;
+	margin: 0.65rem auto 0;
 	display: block;
 }
 
@@ -307,7 +303,7 @@ input::-webkit-input-placeholder {
 	text-align: center;
 	color: #85b9ff;
 	letter-spacing: 0.11rem;
-	margin-top: 0.2rem;
+	margin-top: 0.1rem;
 }
 
 .dianji {
@@ -487,32 +483,34 @@ input::-webkit-input-placeholder {
 	/* bottom: 0; */
 	/* margin: auto; */
 	left: 1.72rem;
-	padding: 0 0.6rem;
+	padding: 0 0.2rem;
 	box-sizing: border-box;
 }
 .cheng_box .cheng_con p{
-	font-size: 0.2rem;
-	    margin-top: 0.5rem;
+	font-size: 0.24rem;
+	
+}
+.cheng_box .cheng_con p:nth-of-type(1){
+	margin-top: 0.35rem;
 }
 .mingci{
 	color: red!important;
 }
-
+.tijiao2{
+		    margin: 0.3rem auto 0;
+		    display: block;
+		    width: 4rem;
+			height: 0.68rem;
+	}
 @media screen and (min-width: 750px) {
 	.bott_A {
 		width: 100%;
 		overflow: hidden;
 		position: absolute;
-		top: 1.56rem;
+		top: 3.4rem;
 		left: 0;
 	}
 
-	.tiaoti {
-		width: 12.17rem;
-		height: 6.58rem;
-		display: block;
-		margin: auto;
-	}
 
 	.bott_A .diji {
 		text-align: center;
@@ -526,7 +524,7 @@ input::-webkit-input-placeholder {
 		font-size: 0.46rem;
 		color: #85b9ff;
 		letter-spacing: 0.05rem;
-		margin-top: 0.45rem;
+		margin-top: 0rem;
 	}
 
 	.bott_A .gongxi span {
@@ -539,7 +537,7 @@ input::-webkit-input-placeholder {
 		letter-spacing: 0.04rem;
 		color: #85b9ff;
 		text-align: center;
-		margin-top: 0.45rem;
+		margin-top: 0rem;
 	}
 
 	.bott_A .xian {
@@ -547,19 +545,19 @@ input::-webkit-input-placeholder {
 		height: 0.24rem;
 		margin: auto;
 		display: block;
-		margin-top: 0.6rem;
+		margin-top: 0rem;
 	}
 
 	.bott_A .tishi {
 		text-align: center;
-		font-size: 0.35rem;
+		font-size: 0.29rem;
 		color: #85b9ff;
 		letter-spacing: 0.06rem;
-		margin-top: 0.5rem;
+		margin-top: 0rem;
 	}
 
 	.bott_A .pc_tishi {
-		margin-top: 0.2rem !important;
+		margin-top: 0.05rem !important;
 	}
 
 	.shengshi {
@@ -568,15 +566,15 @@ input::-webkit-input-placeholder {
 		width: 7.28rem;
 		margin: auto;
 		justify-content: space-between;
-		margin-top: -0.1rem !important;
+		margin-top: 0.2rem !important;
 	}
 
 	.pc_shengshi {
-		margin-top: 0.31rem !important;
+		margin-top: 0.2rem !important;
 	}
 
 	.pc_shengshi_B {
-		margin-top: 0.21rem !important;
+		margin-top: 0.1rem !important;
 	}
 
 	.xiala_box {
@@ -590,7 +588,7 @@ input::-webkit-input-placeholder {
 		display: block;
 		position: absolute;
 		right: 0.05rem;
-		top: 0.85rem;
+		top: 0.2rem;
 	}
 
 	.xiala_box select {
@@ -599,6 +597,7 @@ input::-webkit-input-placeholder {
 		padding: 0 0.35rem 0 0.1rem;
 		box-sizing: border-box;
 		font-size: 0.29rem;
+		display: block;
 	}
 
 	.shengshi .adress {
@@ -644,11 +643,11 @@ input::-webkit-input-placeholder {
 		display: flex;
 		align-items: center;
 		margin-left: 6.15rem;
-		margin-top: 0.36rem;
+		margin-top: 0.06rem;
 	}
 
 	.bott_A .pc_beizhu {
-		margin-top: 0.36rem !important;
+		margin-top: 0.05rem !important;
 	}
 
 	.xuanze {
@@ -658,9 +657,9 @@ input::-webkit-input-placeholder {
 	}
 
 	.bott_A .tijiao {
-		width: 2.83rem;
-		height: 0.81rem;
-		margin: 0.94rem auto 0;
+		width: 2.55rem;
+		height: 0.74rem;
+		margin: 0.34rem auto 0;
 		display: block;
 	}
 
@@ -668,7 +667,7 @@ input::-webkit-input-placeholder {
 		width: 100%;
 		overflow: hidden;
 		position: absolute;
-		top: 1.32rem;
+		top: 1.56rem;
 		left: 0;
 	}
 
@@ -685,7 +684,7 @@ input::-webkit-input-placeholder {
 		font-size: 0.46rem;
 		color: #85b9ff;
 		letter-spacing: 0.05rem;
-		margin-top: 0.25rem;
+		margin-top: 0.45rem;
 	}
 
 	.bott_B .gongxi span {
@@ -698,7 +697,7 @@ input::-webkit-input-placeholder {
 		letter-spacing: 0.04rem;
 		color: #85b9ff;
 		text-align: center;
-		margin-top: 0.25rem;
+		margin-top: 0.45rem;
 	}
 
 	.bott_B .tishi {
@@ -706,7 +705,7 @@ input::-webkit-input-placeholder {
 		font-size: 0.3rem;
 		color: #85b9ff;
 		letter-spacing: 0.06rem;
-		margin-top: 0.3rem;
+		margin-top: 0.4rem;
 	}
 
 	.bott_B .beizhu {
@@ -715,13 +714,13 @@ input::-webkit-input-placeholder {
 		display: flex;
 		align-items: center;
 		margin-left: 6.15rem;
-		margin-top: 0.2rem;
+		margin-top: 0.4rem;
 	}
 
 	.bott_B .tijiao {
 		width: 2.83rem;
 		height: 0.81rem;
-		margin: 0.45rem auto 0;
+		margin: 1.35rem auto 0;
 		display: block;
 	}
 
@@ -764,7 +763,7 @@ input::-webkit-input-placeholder {
 		text-align: center;
 		color: #85b9ff;
 		letter-spacing: 0.11rem;
-		margin-top: 0.2rem;
+		margin-top: 0.05rem;
 	}
 
 	.yinsi_box {
@@ -914,7 +913,7 @@ input::-webkit-input-placeholder {
 		text-align: right;
 		position: absolute;
 		/* top: 19%; */
-		top: 11%;
+		top: 26%;
 		right: 29%;
 		z-index: 1;
 	}
@@ -935,13 +934,21 @@ input::-webkit-input-placeholder {
 		letter-spacing: 0.14rem;
 		color: #ffffff;
 		/* font-size: 0.48rem; */
-		top: 16%;
+		top: 38%;
 		/* bottom: 0; */
 		/* margin: auto; */
 		left: 6.02rem;
 	}
 	.cheng_box .cheng_con p{
 		font-size: 0.24rem;
-		margin-top: 0.7rem;
+	}
+	.cheng_box .cheng_con p:nth-of-type(1){
+		margin-top: 0.6rem;
+	}
+	.tijiao2{
+		    height: 0.68rem;
+		    margin: 0.3rem auto 0;
+		    display: block;
+		    width: 4rem;
 	}
 }
